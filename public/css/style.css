@@ -7,4 +7,35 @@
   width: 50%;
 }
 
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f6f6f6;
+}
+.section__localisation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: #eaeaea;
+  box-shadow: inset 0px 8px 5px 0px rgba(0, 0, 0, 0.12);
+}
+.section__titre {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.section__button {
+  padding: 15px;
+  border-radius: 23px;
+  border: none;
+  background-color: #9356DC;
+  color: white;
+}
+.section__button:hover {
+  transition-duration: 0.5s;
+  box-shadow: inset #FF79DA 0px 6px 20px 2px;
+}
+
 /*# sourceMappingURL=style.css.map */

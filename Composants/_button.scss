@@ -1,0 +1,13 @@
+.section{
+    &__button{
+    padding: 15px;
+    border-radius: 23px;
+    border: none;
+    background-color: $color-primaire;
+    color: white;
+    }
+    &__button:hover{
+        transition-duration: 0.5s;
+        box-shadow: inset $color-secondaire 0px 6px 20px 2px;
+    }
+}
