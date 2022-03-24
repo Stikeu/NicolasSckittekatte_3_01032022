@@ -3,6 +3,7 @@
     flex-direction: column;
     align-items: center;
     background-color: #f6f6f6;
+    padding-bottom: 50px;
     &__localisation{
         display: flex;
         align-items: center;
@@ -12,7 +13,21 @@
         box-shadow: inset 0px 8px 5px 0px rgb(0 0 0 / 12%);
     }
     &__titre{
-        padding-left: 80px;
-        padding-right: 80px;
+        display: flex;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+    &__contenue{
+        display: flex;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+}
+
+.fonctio{
+    display: flex;
+    flex-direction: column;
+    &__headtitle{
+        margin-left: 15px;
     }
 }

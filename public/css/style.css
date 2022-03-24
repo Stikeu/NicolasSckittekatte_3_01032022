@@ -12,6 +12,7 @@
   flex-direction: column;
   align-items: center;
   background-color: #f6f6f6;
+  padding-bottom: 50px;
 }
 .section__localisation {
   display: flex;
@@ -22,8 +23,22 @@
   box-shadow: inset 0px 8px 5px 0px rgba(0, 0, 0, 0.12);
 }
 .section__titre {
-  padding-left: 80px;
-  padding-right: 80px;
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+}
+.section__contenue {
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.fonctio {
+  display: flex;
+  flex-direction: column;
+}
+.fonctio__headtitle {
+  margin-left: 15px;
 }
 
 .section__button {
@@ -36,6 +51,110 @@
 .section__button:hover {
   transition-duration: 0.5s;
   box-shadow: inset #FF79DA 0px 6px 20px 2px;
+}
+
+.fonctio__button {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  margin: 15px;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0px 0px 24px -6px rgba(0, 0, 0, 0.45);
+}
+.fonctio__button__nombre {
+  display: flex;
+  margin-left: -10px;
+  margin-right: 18px;
+  justify-content: center;
+  align-items: center;
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  color: white;
+  background-color: #9356DC;
+}
+.fonctio__button__icone {
+  font-size: 15px;
+  color: grey;
+}
+.fonctio__button__text {
+  padding-left: 6%;
+  font-size: 15px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+.fonctio__button:hover {
+  background-color: #f2eafb;
+}
+.fonctio__button:hover .fonctio__button__icone {
+  color: #9356DC;
+}
+
+.restau {
+  background-color: #f6f6f6;
+  margin-top: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.restau__headtitle {
+  margin: 0px 0px 0px 15px;
+}
+.restau__affiche {
+  margin: 10px 15px 0px 15px;
+  background-color: white;
+  border-radius: 15px;
+}
+.restau__affiche__picture {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 15px 15px 0px 0px;
+}
+.restau__affiche__nom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0px 10px 0px 10px;
+}
+.restau__affiche__nom__icone {
+  overflow: hidden;
+}
+.restau__affiche__text {
+  margin: 15px 0px 15px 0px;
+}
+.restau__affiche__text__title {
+  margin: 0;
+  margin-bottom: 3px;
+}
+.restau__affiche__text__lieu {
+  margin: 0;
+}
+.restau__affiche__coeur {
+  font-size: 25px;
+}
+.restau__affiche__coeur:hover {
+  cursor: pointer;
+  color: #9356DC;
+  background-color: #9356DC;
+}
+
+.footer {
+  padding: 20px;
+  background-color: #353535;
+}
+.footer__info__logo {
+  width: 100px;
+}
+.footer__info__link {
+  color: white;
+  margin: 0px;
+  margin-top: 5px;
+  font-size: 15px;
+}
+.footer__info__link__picture {
+  font-size: 13px;
+  padding-right: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
