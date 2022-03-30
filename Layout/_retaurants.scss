@@ -1,15 +1,65 @@
+.loader{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: hsla(0,0%,100%,.9);
+    animation: spin .01s;
+    animation-delay: 3s;
+    animation-fill-mode: both;
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle {
+    height: 120px;
+    width: 120px;
+    border: 5px solid $color-primaire;
+    border-top: 5px solid $color-tertiaire;
+    border-bottom: 5px solid $color-secondaire;
+    border-radius: 100%;
+    animation: spin 3s linear;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+
 .restau {
     background-color: #f6f6f6;
     margin-top: 30px;
     padding-top: 30px;
     padding-bottom: 30px;
-    &__headtitle{
+
+    &__headtitle {
         margin: 0px 0px 0px 15px;
     }
+
     &__affiche {
         margin: 10px 15px 0px 15px;
         background-color: white;
         border-radius: 15px;
+        position: relative;
+
+        &__link {
+            text-decoration: none;
+            width: 100%;
+            position: absolute;
+            height: 100%;
+            cursor: pointer;
+        }
 
         &__picture {
             width: 100%;
@@ -24,7 +74,7 @@
             justify-content: space-between;
             margin: 0px 10px 0px 10px;
 
-            &__icone{
+            &__icone {
                 overflow: hidden;
             }
         }
@@ -42,13 +92,22 @@
             }
         }
 
+        &__new {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            background-color: $color-tertiaire;
+            padding: 5px;
+        }
+
         &__coeur {
             font-size: 25px;
         }
-        &__coeur:hover{
+
+        &__coeur:hover {
             cursor: pointer;
+            background-clip: content-box;
             color: $color-primaire;
-            background-color: $color-primaire;
         }
     }
 }
