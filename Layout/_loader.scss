@@ -6,7 +6,7 @@
     top: 0;
     background-color: hsla(0,0%,100%,.9);
     animation: spin .01s;
-    animation-delay: 3s;
+    animation-delay: 2s;
     animation-fill-mode: both;
     z-index: 10000;
     display: flex;
@@ -21,7 +21,7 @@
     border-top: 5px solid $color-tertiaire;
     border-bottom: 5px solid $color-secondaire;
     border-radius: 100%;
-    animation: spin 1s linear;
+    animation: spin 2s linear;
 }
 
 @keyframes spin {
