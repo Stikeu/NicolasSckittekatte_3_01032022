@@ -1,0 +1,37 @@
+.loader{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: hsla(0,0%,100%,.9);
+    animation: spin .01s;
+    animation-delay: 3s;
+    animation-fill-mode: both;
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle {
+    height: 120px;
+    width: 120px;
+    border: 5px solid $color-primaire;
+    border-top: 5px solid $color-tertiaire;
+    border-bottom: 5px solid $color-secondaire;
+    border-radius: 100%;
+    animation: spin 1s linear;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+        opacity: 0;
+        visibility: hidden;
+    }
+}

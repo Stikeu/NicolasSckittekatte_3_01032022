@@ -115,7 +115,7 @@
   border-top: 5px solid #99E2D0;
   border-bottom: 5px solid #FF79DA;
   border-radius: 100%;
-  animation: spin 3s linear;
+  animation: spin 1s linear;
 }
 
 @keyframes spin {
@@ -128,69 +128,6 @@
     visibility: hidden;
   }
 }
-.restau {
-  background-color: #f6f6f6;
-  margin-top: 30px;
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-.restau__headtitle {
-  margin: 0px 0px 0px 15px;
-}
-.restau__affiche {
-  margin: 10px 15px 0px 15px;
-  background-color: white;
-  border-radius: 15px;
-  position: relative;
-}
-.restau__affiche__link {
-  text-decoration: none;
-  width: 100%;
-  position: absolute;
-  height: 100%;
-  cursor: pointer;
-}
-.restau__affiche__picture {
-  width: 100%;
-  height: 160px;
-  object-fit: cover;
-  border-radius: 15px 15px 0px 0px;
-}
-.restau__affiche__nom {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 0px 10px 0px 10px;
-}
-.restau__affiche__nom__icone {
-  overflow: hidden;
-}
-.restau__affiche__text {
-  margin: 15px 0px 15px 0px;
-}
-.restau__affiche__text__title {
-  margin: 0;
-  margin-bottom: 3px;
-}
-.restau__affiche__text__lieu {
-  margin: 0;
-}
-.restau__affiche__new {
-  position: absolute;
-  right: 10px;
-  top: 10px;
-  background-color: #99E2D0;
-  padding: 5px;
-}
-.restau__affiche__coeur {
-  font-size: 25px;
-}
-.restau__affiche__coeur:hover {
-  cursor: pointer;
-  background-clip: content-box;
-  color: #9356DC;
-}
-
 .footer {
   padding: 20px;
   background-color: #353535;
@@ -304,6 +241,71 @@
   align-items: center;
   justify-content: center;
   align-content: center;
+}
+
+.restau {
+  background-color: #f6f6f6;
+  margin-top: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.restau__headtitle {
+  margin: 0px 0px 0px 15px;
+}
+.restau__affiche {
+  margin: 10px 15px 0px 15px;
+  background-color: white;
+  border-radius: 15px;
+  position: relative;
+}
+.restau__affiche__link {
+  text-decoration: none;
+  color: black;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+.restau__affiche__picture {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 15px 15px 0px 0px;
+}
+.restau__affiche__nom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0px 10px 0px 10px;
+}
+.restau__affiche__nom__icone {
+  overflow: hidden;
+}
+.restau__affiche__text {
+  margin: 15px 0px 15px 0px;
+}
+.restau__affiche__text__title {
+  margin: 0;
+  margin-bottom: 3px;
+}
+.restau__affiche__text__lieu {
+  margin: 0;
+}
+.restau__affiche__new {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background-color: #99E2D0;
+  padding: 5px;
+}
+.restau__affiche__coeur {
+  font-size: 25px;
+}
+.restau__affiche__coeur:hover {
+  cursor: pointer;
+  background-clip: content-box;
+  color: #9356DC;
+  font-weight: 900;
+  transition-duration: 0.5s;
 }
 
 /*# sourceMappingURL=style.css.map */
