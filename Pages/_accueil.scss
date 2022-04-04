@@ -25,9 +25,35 @@
 }
 
 .fonctio{
-    display: flex;
+    &__placement{
+        display: flex;
     flex-direction: column;
+    }
+    
     &__headtitle{
         margin-left: 15px;
     }
+}
+
+@media (min-width:1024px){
+    .fonctio{
+        &__placement{
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        &__button{
+            width: 30%;
+        }
+    }
+    
+    .restau{
+        &__placement{
+            display: flex;
+        }
+        &__affiche{
+            width: 25%;
+        }
+    }
+
+
 }
