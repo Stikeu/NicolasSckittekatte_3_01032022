@@ -42,7 +42,7 @@
 }
 
 .section__button {
-  padding: 15px;
+  padding: 16px 35px;
   border-radius: 23px;
   border: none;
   background-image: linear-gradient(0deg, #9356DC, #FF79DA);
@@ -146,6 +146,10 @@
   font-size: 13px;
   padding-right: 10px;
 }
+.footer__info__go {
+  color: white;
+  text-decoration: none;
+}
 
 .header__arrow {
   position: absolute;
@@ -167,7 +171,7 @@
   border-radius: 20px 20px 0px 0px;
   background-color: #f6f6f6;
   position: relative;
-  padding: 0px 10px 0px 10px;
+  padding: 0px 10px 50px 10px;
 }
 
 .head {
@@ -244,6 +248,7 @@
   align-items: center;
   justify-content: center;
   align-content: center;
+  margin-top: 35px;
 }
 
 .restau {
