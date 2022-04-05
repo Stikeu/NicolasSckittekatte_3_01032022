@@ -1,3 +1,11 @@
+body, html {
+  font-family: "Roboto", sans-serif;
+}
+
+.header__logo, .footer__info__logo, .head__title {
+  font-family: "Shrikhand", cursive;
+}
+
 .header {
   display: flex;
   align-items: center;
@@ -258,6 +266,18 @@
 .menuInside:hover .menuInside__confirmation {
   margin-right: -16px;
 }
+.menuInside__wrap {
+  display: flex;
+  background-color: white;
+  border-radius: 100%;
+  width: 25px;
+  height: 25px;
+  justify-content: center;
+  align-items: center;
+}
+.menuInside__icon {
+  color: #99E2D0;
+}
 
 .commander {
   display: flex;
@@ -281,6 +301,7 @@
   background-color: white;
   border-radius: 15px;
   position: relative;
+  box-shadow: 0px 0px 10px -6px rgba(0, 0, 0, 0.45);
 }
 .restau__affiche__link {
   text-decoration: none;
@@ -319,6 +340,7 @@
   right: 10px;
   top: 10px;
   background-color: #99E2D0;
+  color: #1b6150;
   padding: 5px;
 }
 .restau__affiche__coeur {
@@ -326,8 +348,10 @@
 }
 .restau__affiche__coeur:hover {
   cursor: pointer;
-  background-clip: content-box;
-  color: #9356DC;
+  background: linear-gradient(0deg, #9356DC, #FF79DA);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-weight: 900;
   transition-duration: 0.5s;
 }
@@ -382,7 +406,7 @@
 
 @media (min-width: 1024px) {
   .head {
-    padding: 0px 40px 0px 0px;
+    padding: 0px 25px 0px 0px;
   }
 
   .allmenu {
@@ -395,6 +419,10 @@
 
   .menuInside {
     margin: 20px 20px 20px 0px;
+  }
+
+  .container {
+    padding: 0px 0px 50px 25px;
   }
 }
 

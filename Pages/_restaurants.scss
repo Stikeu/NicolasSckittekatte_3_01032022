@@ -15,7 +15,7 @@
     object-fit: cover;
 }
 
-.container{
+.container {
     margin-top: -40px;
     border-radius: 20px 20px 0px 0px;
     background-color: #f6f6f6;
@@ -23,7 +23,8 @@
     padding: 0px 10px 50px 25px;
 
 }
-.head{
+
+.head {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -47,7 +48,7 @@
     }
 }
 
-.menuInside{
+.menuInside {
     display: flex;
     overflow: hidden;
     padding: 15px;
@@ -58,44 +59,65 @@
     animation: appear .6s;
     animation-fill-mode: both;
     transform: scale(0);
-    &__header{
+
+    &__header {
         flex: 1;
         white-space: nowrap;
         text-overflow: ellipsis;
         overflow: hidden;
     }
-    &__name{
+
+    &__name {
         margin: 0px;
         white-space: nowrap;
         text-overflow: ellipsis;
         overflow: hidden;
     }
-    &__description{
+
+    &__description {
         margin: 0px;
         white-space: nowrap;
         text-overflow: ellipsis;
         overflow: hidden;
     }
-    &__price{
+
+    &__price {
         display: flex;
         justify-content: flex-end;
         align-items: flex-end;
     }
-    &__confirmation{
+
+    &__confirmation {
         display: flex;
         align-items: center;
         justify-content: center;
         background-color: $color-tertiaire;
-        margin: -16px -75px -16px 13px ;
+        margin: -16px -75px -16px 13px;
         width: 60px;
         transition-duration: 1s;
     }
-    &:hover &__confirmation{
+
+    &:hover &__confirmation {
         margin-right: -16px;
     }
+
+    &__wrap {
+        display: flex;
+        background-color: white;
+        border-radius: 100%;
+        width: 25px;
+        height: 25px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__icon {
+        color: $color-tertiaire;
+    }
+
 }
 
-.commander{
+.commander {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -120,6 +142,7 @@
         background-color: white;
         border-radius: 15px;
         position: relative;
+        box-shadow: 0px 0px 10px -6px rgb(0 0 0 / 45%);
 
         &__link {
             text-decoration: none;
@@ -165,6 +188,7 @@
             right: 10px;
             top: 10px;
             background-color: $color-tertiaire;
+            color: #1b6150;
             padding: 5px;
         }
 
@@ -174,41 +198,50 @@
 
         &__coeur:hover {
             cursor: pointer;
-            background-clip: content-box;
-            color: $color-primaire;
+            background: linear-gradient(0deg,$color-primaire,$color-secondaire);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
             font-weight: 900;
-            transition-duration: 0.5s;
         }
     }
 }
 
-@keyframes appear{
-    0%{
+@keyframes appear {
+    0% {
         transform: scale(0);
     }
-    100%{
+
+    100% {
         transform: scale(1);
     }
 }
 
 @for $i from 0 to 10 {
-    .delay#{$i}{
+    .delay#{$i} {
         animation-delay: #{$i*0.1}s;
     }
 }
 
-@media (min-width:1024px){
-    .head{
-        padding: 0px 40px 0px 0px;
+@media (min-width:1024px) {
+    .head {
+        padding: 0px 25px 0px 0px;
     }
-    .allmenu{
+
+    .allmenu {
         display: flex;
     }
-    .menu{
+
+    .menu {
         width: 33%;
     }
-    .menuInside{
+
+    .menuInside {
         margin: 20px 20px 20px 0px;
     }
-    
+
+    .container {
+        padding: 0px 0px 50px 25px;
+    }
+
 }
