@@ -274,6 +274,11 @@ body, html {
   height: 25px;
   justify-content: center;
   align-items: center;
+  transform: rotate(360deg);
+  transition-duration: 1s;
+}
+.menuInside:hover .menuInside__wrap {
+  transform: rotate(0);
 }
 .menuInside__icon {
   color: #99E2D0;
@@ -353,7 +358,6 @@ body, html {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 900;
-  transition-duration: 0.5s;
 }
 
 @keyframes appear {

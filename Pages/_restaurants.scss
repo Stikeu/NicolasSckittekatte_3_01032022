@@ -97,7 +97,7 @@
         transition-duration: 1s;
     }
 
-    &:hover &__confirmation {
+    &:hover &__confirmation{
         margin-right: -16px;
     }
 
@@ -109,6 +109,11 @@
         height: 25px;
         justify-content: center;
         align-items: center;
+        transform: rotate(360deg);
+        transition-duration: 1s;
+    }
+    &:hover &__wrap{
+        transform: rotate(0);
     }
 
     &__icon {
