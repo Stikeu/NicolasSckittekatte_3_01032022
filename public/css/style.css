@@ -61,9 +61,6 @@ body, html {
   .restau__placement {
     display: flex;
   }
-  .restau__affiche {
-    width: 25%;
-  }
 }
 .section__button {
   padding: 16px 35px;
